@@ -20,9 +20,9 @@ const dbRun = async (paramId, paramPassword) => {
 
     try{
         connection = await oracledb.getConnection({
-            user: "ALI_NOTE",//이거 id가 아니라 user로 해야 함 ㅋㅋㅋㅋ 
-            password: "1234",
-            connectString: '61.32.218.74:1521/XE'
+            user: "*****",//이거 id가 아니라 user로 해야 함 ㅋㅋㅋㅋ 
+            password: "*****",
+            connectString: '*****/XE'
             //connectString: '192.168.0.44:1521/XE'
             //connectString: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.0.44)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)))"
             //connectString: "(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=61.32.218.74)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=XE)))"
