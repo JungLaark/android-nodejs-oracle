@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         timer.schedule(timerTask, 0, 1000);
     }
 
-    public void getCallHistory() throws JSONException {
+    public void getCallHistory() {
         HashMap<String, String> list = new HashMap<>();
         //JSONObject obj = new JSONObject();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMdd_HHmmss");
