@@ -96,16 +96,6 @@ public class MainActivity extends AppCompatActivity {
                 dateString = dateFormat.format(new Date(cursor.getLong(0)));
                 number = cursor.getString(1);
                 duration = cursor.getString(2);
-                //그냥 이거 바로 db에 넣으면 되는거아님?
-                //하나씩 보내서 node 에서 중복확인하고?
-                //어떻게 하는 것이 좋을까요...............
-                //list.put(dateString, number);
-
-                //obj.put(dateString, number);
-
-//                CallList callListObj = new CallList();
-//                callListObj.setPhoneNumber(number);
-//                callListObj.setTime(dateString);
 
                 retrofitApi.postCallList(number, dateString, duration).enqueue(new Callback<ResponseBody>() {
                     @Override
