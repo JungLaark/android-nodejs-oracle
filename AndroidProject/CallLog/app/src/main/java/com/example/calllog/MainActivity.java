@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getCallHistory() throws JSONException {
         HashMap<String, String> list = new HashMap<>();
-        JSONObject obj = new JSONObject();
+        //JSONObject obj = new JSONObject();
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyMMdd_HHmmss");
 
         long date = 0;
